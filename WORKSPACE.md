@@ -15,14 +15,14 @@ A estrutura de layout e background global está centralizada em `src/styles/layo
 
 ## 🛠️ Progresso & Logs
 
-### [2026-05-01] - Intensificação Estética: Projetos Glow
-- **Glow Dinâmico:** Implementação de uma camada de brilho central no `.wf-shell` que atinge sua intensidade máxima (vermelho vibrante) no início da seção de Projetos e suaviza conforme o scroll progride.
-- **Arquitetura de Background:** O fundo agora utiliza 3 camadas (vignette fixa, glow dinâmico scrollável e base de cor) para criar profundidade sem sacrificar a performance.
-- **Reforço de Transparência:** Revalidação e aplicação de `background: transparent` em todos os componentes de seção para garantir a visibilidade total do fundo global.
+### [2026-05-01] - Ajuste de Claridade e Brilho em Projetos
+- **Luminosidade Aumentada:** O fundo cinza a partir da seção de Projetos foi elevado para `#222222`, proporcionando uma base mais clara e menos "pesada".
+- **Intensificação do Glow:** O brilho central vermelho em Projetos foi ajustado para uma opacidade de `0.35`, tornando-o mais vibrante e presente.
+- **Manutenção de Transparência:** Reafirmação da transparência das seções para permitir que a luz do fundo global preencha o layout de forma contínua.
 
 ---
 
 ## 📝 Próximos Passos
-- [ ] Validar a suavidade da transição de cor em diferentes velocidades de scroll.
-- [ ] Verificar se o contraste dos textos de "Projetos" se mantém ideal com o novo brilho intenso.
-- [ ] Aplicar micro-interações nos cards de Stacks para acompanhar o novo nível estético.
+- [ ] Validar o contraste das fontes sobre o novo tom cinza mais claro.
+- [ ] Monitorar a transição entre o preto profundo do About e o novo cinza do Projetos.
+- [ ] Implementar micro-animações nas categorias de Stacks.
