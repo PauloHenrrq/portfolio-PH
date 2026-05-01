@@ -15,15 +15,14 @@ A estrutura de layout e background global está centralizada em `src/styles/layo
 
 ## 🛠️ Progresso & Logs
 
-### [2026-05-01] - Refinamento Estético e Conectividade Global
-- **Vignette Global:** Migração do background para o `.wf-shell` em `layout.css`. Implementado degradê horizontal fixo (preto -> vermelho sutil -> preto) e transição vertical (preto -> cinza #1a1a1a) que se ativa na seção de Projetos.
-- **Transparência de Seções:** Todas as seções (Hero, About, Projects, Stacks, Contact) foram configuradas com `background: transparent` para expor o fundo unificado.
-- **Card GitHub:** Refatoração do card final de Projetos para ser linkável, com efeito shimmer no link e tipografia em vermelho morto.
-- **Ajustes de Layout:** Centralização responsiva do label "PROJETOS" e remoção de redundâncias de background em arquivos CSS individuais.
+### [2026-05-01] - Intensificação Estética: Projetos Glow
+- **Glow Dinâmico:** Implementação de uma camada de brilho central no `.wf-shell` que atinge sua intensidade máxima (vermelho vibrante) no início da seção de Projetos e suaviza conforme o scroll progride.
+- **Arquitetura de Background:** O fundo agora utiliza 3 camadas (vignette fixa, glow dinâmico scrollável e base de cor) para criar profundidade sem sacrificar a performance.
+- **Reforço de Transparência:** Revalidação e aplicação de `background: transparent` em todos os componentes de seção para garantir a visibilidade total do fundo global.
 
 ---
 
 ## 📝 Próximos Passos
-- [ ] Validar performance do background fixed em dispositivos mobile.
-- [ ] Revisar transições de cores entre EnergyConnectors e o novo fundo cinza.
-- [ ] Adicionar micro-interações nos cards de Stacks.
+- [ ] Validar a suavidade da transição de cor em diferentes velocidades de scroll.
+- [ ] Verificar se o contraste dos textos de "Projetos" se mantém ideal com o novo brilho intenso.
+- [ ] Aplicar micro-interações nos cards de Stacks para acompanhar o novo nível estético.
